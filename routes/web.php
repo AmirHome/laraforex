@@ -23,3 +23,8 @@ Route::get('/', function () {
 Route::get('/update', [
     'as' => 'updateCurrent', 'uses' => 'UpdateCurrentCurrency@index'
 ]);
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
