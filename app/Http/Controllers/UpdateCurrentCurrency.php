@@ -26,12 +26,6 @@ class UpdateCurrentCurrency extends Controller
      */
     public function index()
     {
-        $current = $this->vantage->getUsdEurRate();
-        $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
-        if(!empty($current)){
-
-            $this->dbFirebase->setUsdEurCost(array_merge($current,$forecast));
-        }
 
         $current = $this->vantage->getUsdTryRate();
         $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
@@ -43,6 +37,13 @@ class UpdateCurrentCurrency extends Controller
         $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
         if(!empty($current)) {
             $this->dbFirebase->setEurTryCost(array_merge($current, $forecast));
+        }
+
+        $current = $this->vantage->getUsdEurRate();
+        $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
+        if(!empty($current)){
+
+            $this->dbFirebase->setUsdEurCost(array_merge($current,$forecast));
         }
     }
 

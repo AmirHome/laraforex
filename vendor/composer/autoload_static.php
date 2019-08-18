@@ -593,6 +593,7 @@ class ComposerStaticInit6120b4ee3bcafef466d5d7129caf732a
     );
 
     public static $classMap = array (
+        'App\\ApiKey' => __DIR__ . '/../..' . '/app/ApiKey.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -612,6 +613,7 @@ class ComposerStaticInit6120b4ee3bcafef466d5d7129caf732a
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Libs\\AlphaVantage' => __DIR__ . '/../..' . '/app/Libs/AlphaVantage.php',
         'App\\Libs\\DBFirebase' => __DIR__ . '/../..' . '/app/Libs/DBFirebase.php',
+        'App\\Log' => __DIR__ . '/../..' . '/app/Log.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

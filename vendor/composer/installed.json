@@ -1457,17 +1457,17 @@
     },
     {
         "name": "google/auth",
-        "version": "v1.5.1",
-        "version_normalized": "1.5.1.0",
+        "version": "v1.5.2",
+        "version_normalized": "1.5.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/googleapis/google-auth-library-php.git",
-            "reference": "0f75e20e7392e863f5550ed2c2d3d50af21710fb"
+            "reference": "2ee962e5df3e9427fda859f1b0515d6d62c4afa5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/0f75e20e7392e863f5550ed2c2d3d50af21710fb",
-            "reference": "0f75e20e7392e863f5550ed2c2d3d50af21710fb",
+            "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/2ee962e5df3e9427fda859f1b0515d6d62c4afa5",
+            "reference": "2ee962e5df3e9427fda859f1b0515d6d62c4afa5",
             "shasum": ""
         },
         "require": {
@@ -1488,7 +1488,7 @@
         "suggest": {
             "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings. Please require version ^2."
         },
-        "time": "2019-04-16T18:48:28+00:00",
+        "time": "2019-07-22T21:01:31+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2145,17 +2145,17 @@
     },
     {
         "name": "kreait/firebase-php",
-        "version": "4.30.0",
-        "version_normalized": "4.30.0.0",
+        "version": "4.30.1",
+        "version_normalized": "4.30.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kreait/firebase-php.git",
-            "reference": "e65a53dd369d6316f134b6d9f92dc07a7e55882d"
+            "reference": "892aeaf60cf2cd95c02ea4c412e8388a2ca9f180"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kreait/firebase-php/zipball/e65a53dd369d6316f134b6d9f92dc07a7e55882d",
-            "reference": "e65a53dd369d6316f134b6d9f92dc07a7e55882d",
+            "url": "https://api.github.com/repos/kreait/firebase-php/zipball/892aeaf60cf2cd95c02ea4c412e8388a2ca9f180",
+            "reference": "892aeaf60cf2cd95c02ea4c412e8388a2ca9f180",
             "shasum": ""
         },
         "require": {
@@ -2182,7 +2182,7 @@
             "phpunit/phpunit": "^6.0",
             "symfony/var-dumper": "^3.3"
         },
-        "time": "2019-08-16T01:14:37+00:00",
+        "time": "2019-08-17T14:52:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3086,17 +3086,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "2.23.0",
-        "version_normalized": "2.23.0.0",
+        "version": "2.23.1",
+        "version_normalized": "2.23.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "97a08830a22ce0b69549a4966773c0eae900468d"
+            "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/97a08830a22ce0b69549a4966773c0eae900468d",
-            "reference": "97a08830a22ce0b69549a4966773c0eae900468d",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/767617a047e5b8b8b3b0b6023a2650847ed7df02",
+            "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02",
             "shasum": ""
         },
         "require": {
@@ -3112,7 +3112,7 @@
             "phpunit/phpunit": "^7.5 || ^8.0",
             "squizlabs/php_codesniffer": "^3.4"
         },
-        "time": "2019-08-12T17:19:41+00:00",
+        "time": "2019-08-17T13:57:34+00:00",
         "bin": [
             "bin/carbon"
         ],
