@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "68d2cb7d5ceb9d0180357fc45f5f5eca",
+    "content-hash": "0cd5420675161e0454f59d9f9e6e8d81",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1188,16 +1188,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.5.2",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "2ee962e5df3e9427fda859f1b0515d6d62c4afa5"
+                "reference": "0f75e20e7392e863f5550ed2c2d3d50af21710fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/2ee962e5df3e9427fda859f1b0515d6d62c4afa5",
-                "reference": "2ee962e5df3e9427fda859f1b0515d6d62c4afa5",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/0f75e20e7392e863f5550ed2c2d3d50af21710fb",
+                "reference": "0f75e20e7392e863f5550ed2c2d3d50af21710fb",
                 "shasum": ""
             },
             "require": {
@@ -1235,7 +1235,7 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2019-07-22T21:01:31+00:00"
+            "time": "2019-04-16T18:48:28+00:00"
         },
         {
             "name": "google/cloud-core",
@@ -1804,16 +1804,16 @@
         },
         {
             "name": "kreait/firebase-php",
-            "version": "4.30.1",
+            "version": "4.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kreait/firebase-php.git",
-                "reference": "892aeaf60cf2cd95c02ea4c412e8388a2ca9f180"
+                "reference": "e65a53dd369d6316f134b6d9f92dc07a7e55882d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/892aeaf60cf2cd95c02ea4c412e8388a2ca9f180",
-                "reference": "892aeaf60cf2cd95c02ea4c412e8388a2ca9f180",
+                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/e65a53dd369d6316f134b6d9f92dc07a7e55882d",
+                "reference": "e65a53dd369d6316f134b6d9f92dc07a7e55882d",
                 "shasum": ""
             },
             "require": {
@@ -1874,7 +1874,7 @@
                 "google",
                 "sdk"
             ],
-            "time": "2019-08-17T14:52:31+00:00"
+            "time": "2019-08-16T01:14:37+00:00"
         },
         {
             "name": "kreait/firebase-tokens",
@@ -2604,16 +2604,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.23.1",
+            "version": "2.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02"
+                "reference": "97a08830a22ce0b69549a4966773c0eae900468d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/767617a047e5b8b8b3b0b6023a2650847ed7df02",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/97a08830a22ce0b69549a4966773c0eae900468d",
+                "reference": "97a08830a22ce0b69549a4966773c0eae900468d",
                 "shasum": ""
             },
             "require": {
@@ -2667,7 +2667,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-17T13:57:34+00:00"
+            "time": "2019-08-12T17:19:41+00:00"
         },
         {
             "name": "nikic/php-parser",

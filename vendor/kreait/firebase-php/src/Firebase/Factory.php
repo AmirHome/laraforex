@@ -26,6 +26,9 @@ use Kreait\GcpMetadata;
 use Psr\Http\Message\UriInterface;
 use Psr\SimpleCache\CacheInterface;
 
+/**
+ * @internal
+ */
 class Factory
 {
     /**

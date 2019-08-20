@@ -189,11 +189,7 @@ class GCECredentials extends CredentialsLoader implements SignBlobInterface
                 // the metadata resolution was particularly slow. The latter case is
                 // "unlikely".
                 $resp = $httpHandler(
-                    new Request(
-                        'GET',
-                        $checkUri,
-                        [self::FLAVOR_HEADER => 'Google']
-                    ),
+                    new Request('GET', $checkUri),
                     ['timeout' => self::COMPUTE_PING_CONNECTION_TIMEOUT_S]
                 );
 
@@ -344,7 +340,7 @@ class GCECredentials extends CredentialsLoader implements SignBlobInterface
             new Request(
                 'GET',
                 $uri,
-                [self::FLAVOR_HEADER => 'Google']
+                [GCECredentials::FLAVOR_HEADER => 'Google']
             )
         );
 
