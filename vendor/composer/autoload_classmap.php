@@ -6,6 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\ApiKey' => $baseDir . '/app/ApiKey.php',
+    'App\\Console\\Commands\\ImportCurrencyPrice' => $baseDir . '/app/Console/Commands/ImportCurrencyPrice.php',
+    'App\\Console\\Commands\\ImportTechnicalIndicator' => $baseDir . '/app/Console/Commands/ImportTechnicalIndicator.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -25,6 +28,8 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Libs\\AlphaVantage' => $baseDir . '/app/Libs/AlphaVantage.php',
     'App\\Libs\\DBFirebase' => $baseDir . '/app/Libs/DBFirebase.php',
+    'App\\Libs\\FreeCurrconv' => $baseDir . '/app/Libs/FreeCurrconv.php',
+    'App\\Log' => $baseDir . '/app/Log.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',

@@ -31,21 +31,18 @@ class UpdateCurrentCurrency extends Controller
     public function index()
     {
 
-//        $current = $this->vantage->getUsdTryRate();
         $current = $this->currconv->getUsdTryRate();
         $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
         if(!empty($current)) {
             $this->dbFirebase->setUsdTryCost(array_merge($current, $forecast));
         }
 
-//        $current = $this->vantage->getEurTryRate();
         $current = $this->currconv->getEurTryRate();
         $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
         if(!empty($current)) {
             $this->dbFirebase->setEurTryCost(array_merge($current, $forecast));
         }
 
-//        $current = $this->vantage->getUsdEurRate();
         $current = $this->currconv->getUsdEurRate();
         $forecast = ['next_hour'=>['cost'=>'7.3', 'status'=>'0.901'], 'tomorrow'=>['cost'=>'7.3', 'status'=>'0.901']];
         if(!empty($current)){

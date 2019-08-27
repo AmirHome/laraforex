@@ -4,6 +4,7 @@
 namespace App\Libs;
 use App\ApiKey;
 use App\Log;
+use App\TechnicalIndicator;
 
 class AlphaVantage
 {
@@ -79,18 +80,47 @@ class AlphaVantage
     }
 
     /**
-     * @param string $fnc
-     * @param string $from
-     * @param string $to
+     * @param string $symbol
+     * @param string $interval
+     * @param int $time_period
+     * @param string $series_type
      * @return bool|string
      */
-    protected function sendRequest(string $fnc, string $from, string $to)
+    public function setEma($symbol='USDEUR', $interval='weekly',$time_period=10,$series_type='open')
+    {
+        $fnc = 'EMA';
+
+        $res = $this->sendRequest(['function'=>$fnc,'symbol'=>$symbol,'interval'=>$interval,'time_period'=>$time_period,'series_type'=>$series_type]);
+
+
+        $res = json_decode($res,true);
+
+        if (isset($res['Technical Analysis: EMA'])){
+            foreach ($res['Technical Analysis: EMA'] as $date => $value){
+                TechnicalIndicator::updateOrCreate(
+                    ['date' => $date, 'symbol_pair'=>$symbol],
+                    ['ema'.$time_period => $value['EMA'], ]
+                );
+            }
+        }
+
+        return print_r($res, true);
+
+    }
+
+    /**
+     * @param $data
+     * @return bool|string
+     */
+    protected function sendRequest($data)
     {
         $this->setTryKey();
 
+        $data = http_build_query(array_merge($data, ['apikey'=>$this->apiKey]));
+
         $curl = curl_init();
 
-        $options = [CURLOPT_URL => "{$this->apiUrl}?function=$fnc&from_currency=$from&to_currency=$to&apikey={$this->apiKey}",
+        $options = [CURLOPT_URL => "{$this->apiUrl}?{$data}",
                     CURLOPT_RETURNTRANSFER => true,
                     CURLOPT_ENCODING => "",
                     CURLOPT_MAXREDIRS => 10,
